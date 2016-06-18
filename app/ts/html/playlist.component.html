@@ -1,0 +1,17 @@
+<div style="margin-top:30px;" align="center" id="youtube"></div>
+<table class="table table-hover row">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Title</td>
+			<td>Description</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="#v of vids" (click)="displayVids(v)">
+			<td>{{v.id}}</td>
+			<td>{{v.title}}</td>
+			<td>{{v.desc}}</td>
+		</tr>
+	</tbody>
+</table>
